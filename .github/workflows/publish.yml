@@ -35,7 +35,7 @@ jobs:
       vector_release_channel: ${{ steps.generate-publish-metadata.outputs.vector_release_channel }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Generate publish metadata
@@ -52,7 +52,7 @@ jobs:
       CHANNEL: ${{ needs.generate-publish-metadata.outputs.vector_release_channel }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Bootstrap runner environment (Ubuntu-specific)
@@ -77,7 +77,7 @@ jobs:
       CHANNEL: ${{ needs.generate-publish-metadata.outputs.vector_release_channel }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Bootstrap runner environment (Ubuntu-specific)
@@ -102,7 +102,7 @@ jobs:
       CHANNEL: ${{ needs.generate-publish-metadata.outputs.vector_release_channel }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Bootstrap runner environment (Ubuntu-specific)
@@ -129,7 +129,7 @@ jobs:
       CHANNEL: ${{ needs.generate-publish-metadata.outputs.vector_release_channel }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Bootstrap runner environment (Ubuntu-specific)
@@ -156,7 +156,7 @@ jobs:
       CHANNEL: ${{ needs.generate-publish-metadata.outputs.vector_release_channel }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Bootstrap runner environment (Ubuntu-specific)
@@ -183,7 +183,7 @@ jobs:
       CHANNEL: ${{ needs.generate-publish-metadata.outputs.vector_release_channel }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Bootstrap runner environment (Ubuntu-specific)
@@ -210,7 +210,7 @@ jobs:
       CHANNEL: ${{ needs.generate-publish-metadata.outputs.vector_release_channel }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Bootstrap runner environment (macOS-specific)
@@ -240,7 +240,7 @@ jobs:
       RELEASE_BUILDER: "true"
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Bootstrap runner environment (Windows-specific)
@@ -307,7 +307,7 @@ jobs:
       - name: Fix Git safe directories issue when in containers (actions/checkout#760)
         run: git config --global --add safe.directory /__w/vector/vector
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Download staged package artifacts (x86_64-unknown-linux-gnu)
@@ -356,7 +356,7 @@ jobs:
       - name: Fix Git safe directories issue when in containers (actions/checkout#760)
         run: git config --global --add safe.directory /__w/vector/vector
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Download staged package artifacts (x86_64-unknown-linux-gnu)
@@ -378,7 +378,7 @@ jobs:
       VECTOR_VERSION: ${{ needs.generate-publish-metadata.outputs.vector_version }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Download staged package artifacts (x86_64-apple-darwin)
@@ -408,7 +408,7 @@ jobs:
       CHANNEL: ${{ needs.generate-publish-metadata.outputs.vector_release_channel }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Login to DockerHub
@@ -483,7 +483,7 @@ jobs:
       CHANNEL: ${{ needs.generate-publish-metadata.outputs.vector_release_channel }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Download staged package artifacts (aarch64-unknown-linux-gnu)
@@ -555,7 +555,7 @@ jobs:
       VECTOR_VERSION: ${{ needs.generate-publish-metadata.outputs.vector_version }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Download staged package artifacts (aarch64-unknown-linux-gnu)
@@ -620,7 +620,7 @@ jobs:
       VECTOR_VERSION: ${{ needs.generate-publish-metadata.outputs.vector_version }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Publish update to Homebrew tap
@@ -645,7 +645,7 @@ jobs:
       VECTOR_VERSION: ${{ needs.generate-publish-metadata.outputs.vector_version }}
     steps:
       - name: Checkout Vector
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.git_ref }}
       - name: Download staged package artifacts (aarch64-unknown-linux-gnu)
