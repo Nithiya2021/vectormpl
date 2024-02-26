@@ -338,7 +338,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "00ad3f3a942eee60335ab4342358c161ee296829e0d16ff42fc1d6cb07815467"
 dependencies = [
  "anstyle",
- "bstr 1.9.0",
+ "bstr 1.9.1",
  "doc-comment",
  "predicates",
  "predicates-core",
@@ -1643,9 +1643,9 @@ dependencies = [
 
 [[package]]
 name = "bstr"
-version = "1.9.0"
+version = "1.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c48f0051a4b4c5e0b6d365cd04af53aeaa209e3cc15ec2cdb69e73cc87fbd0dc"
+checksum = "05efc5cfd9110c8416e471df0e96702d58690178e206e61b7173706673c93706"
 dependencies = [
  "memchr",
  "regex-automata 0.4.3",
@@ -3248,7 +3248,7 @@ checksum = "a481586acf778f1b1455424c343f71124b048ffa5f4fc3f8f6ae9dc432dcb3c7"
 name = "file-source"
 version = "0.1.0"
 dependencies = [
- "bstr 1.9.0",
+ "bstr 1.9.1",
  "bytes 1.5.0",
  "chrono",
  "crc",
@@ -5250,7 +5250,7 @@ version = "0.9.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "069264935e816c85884b99e88c8b408d6d92e40ae8760f726c983526a53546b5"
 dependencies = [
- "bstr 1.9.0",
+ "bstr 1.9.1",
  "mlua-sys",
  "mlua_derive",
  "num-traits",
